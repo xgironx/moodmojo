@@ -1,0 +1,39 @@
+<h1>Mood#index</h1>
+<p>Find me in app/views/mood/index.html.erb</p>
+<div class="get">
+  GET OBJECT
+</div>
+<% @moods.each do |mood| %>
+
+  <div>
+    <h2><%= link_to mood.name, mood_songs_path(mood.id) %></h2>
+  </div>
+<% end %>
+
+
+<br />
+
+<label>Artist:</label>
+ <input class="artist" type="text">
+ <label>Track:</label>
+ <input class="track" type="text">
+
+<br />
+<br />
+<br />
+<br />
+<iframe src="https://embed.spotify.com/?uri=spotify:track:7oK9VyNzrYvRFo7nQEYkWN" frameborder="0" allowtransparency="true"></iframe><br />
+<iframe src="https://embed.spotify.com/?uri=spotify:track:5JunxkcjfCYcY7xJ29tLai" frameborder="0" allowtransparency="true"></iframe><br />
+<iframe src="https://embed.spotify.com/?uri=spotify:user:erebore:playlist:788MOXyTfcUb1tdw4oC7KJ&view=coverart" frameborder="0" allowtransparency="true"></iframe><br />
+<iframe src="https://embed.spotify.com/?uri=spotify:user:erebore:playlist:788MOXyTfcUb1tdw4oC7KJ&theme=white" frameborder="0" allowtransparency="true"></iframe><br />
+<iframe src="https://embed.spotify.com/?uri=spotify:user:erebore:playlist:788MOXyTfcUb1tdw4oC7KJ&theme=white&view=coverart" frameborder="0" allowtransparency="true"></iframe><br />
+<iframe src="https://embed.spotify.com/?uri=spotify:track:0g5EKLgdKvNlln7TNqBByK" width="300" height="380" frameborder="0" allowtransparency="true"></iframe><br />
+
+<p>
+  Song.create!(title: "Mr. Brightside", artist: "The Killers", album: "Hot Fuss", album_url: "https://i.scdn.co/image/ac68a9e4a867ec3ce8249cd90a2d7c73755fb487", uri: "spotify:track:7oK9VyNzrYvRFo7nQEYkWN", song_length: 222200, votes: 0, mood_id: 1)
+</p>
+
+
+
+
+<h1><%= link_to "back to home", root_path%></h1>

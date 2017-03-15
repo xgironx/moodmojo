@@ -1,0 +1,119 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  font-family: 'Helvetica', sans-serif;
+}
+header, footer {
+  height: 100px;
+  background-color: #232323;
+  font-family: inherit;
+}
+nav {
+  height: inherit;
+  float: right;
+  font-family: inherit;
+}
+.navlink {
+  height: inherit;
+  float: right;
+  width: 100px;
+  background-color: #232323;
+  color: #1DB954;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: inherit;
+}
+.navlink:hover {
+  background-color: #1DB954;
+  color: #232323;
+}
+.navlink > span {
+  display: block;
+  color: inherit;
+  font-family: inherit;
+}
+.title {
+  height: inherit;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+}
+.title > h1 {
+  display: block;
+  padding: 0 30px;
+  color: #1DB954;
+  font-family: inherit;
+}
+main {
+  flex-grow: 1;
+  background-color: #7C25F8;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  font-family: inherit;
+}
+section {
+  width: 10px;
+  flex-grow: 2;
+  flex-basis: 10px;
+  background-color: #7C25F8;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+aside {
+  width: 10px;
+  flex-grow: 1;
+  flex-basis: 10px;
+  background-color: #7C25F8;
+  font-family: inherit;
+}
+iframe {
+
+  height: 80px;
+  width: 200px;
+}
+@media screen and (max-width: 900px){
+  main{
+    flex-direction: column !important;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  section, aside{
+    width: inherit;
+  }
+  header {
+    height: 200px;
+  }
+  .title {
+    height: 100px;
+    clear: both;
+  }
+  nav {
+    height: 100px;
+    clear: both;
+    float: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  .navlink {
+    float: none;
+    width: 10px;
+    flex-grow: 1;
+  }
+  iframe {
+    view: list;
+    height: 80px;
+    width: 200px;
+  }
+}

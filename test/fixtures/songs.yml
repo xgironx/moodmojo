@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  artist: MyString
+  album: MyString
+  album_url: MyString
+  uri: MyString
+  song_length: MyString
+  votes: MyString
+
+two:
+  title: MyString
+  artist: MyString
+  album: MyString
+  album_url: MyString
+  uri: MyString
+  song_length: MyString
+  votes: MyString

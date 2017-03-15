@@ -1,0 +1,456 @@
+Started GET "/moods/1.json" for ::1 at 2017-03-14 21:38:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoodsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 406 Not Acceptable in 115ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MoodsController#show is missing a template for this request format and variant.
+
+request.formats: ["application/json"]
+request.variant: []):
+  
+actionpack (5.0.2) lib/action_controller/metal/implicit_render.rb:43:in `default_render'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.2) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.2) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.1) lib/puma/configuration.rb:224:in `call'
+puma (3.8.1) lib/puma/server.rb:590:in `handle_request'
+puma (3.8.1) lib/puma/server.rb:425:in `process_client'
+puma (3.8.1) lib/puma/server.rb:289:in `block in run'
+puma (3.8.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/justingiron/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/justingiron/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/justingiron/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/justingiron/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/justingiron/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/justingiron/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/justingiron/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/justingiron/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (125.6ms)
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:45:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.6ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 39ms (Views: 4.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:45:34 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:45:37 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (1.0ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:45:37 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.3ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs/get_all_songs.json?artist=x&track=x" for ::1 at 2017-03-14 21:45:42 -0400
+Processing by SongsController#get_all_songs as JSON
+  Parameters: {"artist"=>"x", "track"=>"x"}
+  [1m[36mSong Load (1.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."mood_id" IS NULL[0m
+Completed 200 OK in 18ms (Views: 1.4ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/moods/save_mood.json?id=1" for ::1 at 2017-03-14 21:45:48 -0400
+Processing by MoodsController#save_mood as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Load (0.5ms)[0m  [1m[34mSELECT  "moods".* FROM "moods" WHERE "moods"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (30.3ms)[0m  [1m[32mINSERT INTO "songs" ("uri", "mood_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["uri", ""], ["mood_id", 1], ["created_at", 2017-03-15 01:45:48 UTC], ["updated_at", 2017-03-15 01:45:48 UTC]]
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+No template found for MoodsController#save_mood, rendering head :no_content
+Completed 204 No Content in 178ms (ActiveRecord: 45.8ms)
+
+
+Started GET "/moods/save_mood.json?id=1" for ::1 at 2017-03-14 21:45:51 -0400
+Processing by MoodsController#save_mood as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Load (0.8ms)[0m  [1m[34mSELECT  "moods".* FROM "moods" WHERE "moods"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "songs" ("uri", "mood_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["uri", ""], ["mood_id", 1], ["created_at", 2017-03-15 01:45:51 UTC], ["updated_at", 2017-03-15 01:45:51 UTC]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+No template found for MoodsController#save_mood, rendering head :no_content
+Completed 204 No Content in 89ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:47:01 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.6ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:47:20 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:47:34 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:47:40 -0400
+Started GET "/songs/get_all_songs.json?id=1" for ::1 at 2017-03-14 21:47:40 -0400
+Processing by SongsController#get_all_songs as JSON
+Processing by MoodsController#get_moods as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (5.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."mood_id" = $1[0m  [["mood_id", 1]]
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 5.2ms)
+
+
+  [1m[36mMood Load (11.5ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 14ms (Views: 2.0ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/songs/get_all_songs.json?id=1" for ::1 at 2017-03-14 21:49:13 -0400
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:49:13 -0400
+Processing by SongsController#get_all_songs as JSON
+Processing by MoodsController#get_moods as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (3.3ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 3.3ms)
+
+
+  [1m[36mSong Load (14.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."mood_id" = $1[0m  [["mood_id", 1]]
+Completed 200 OK in 20ms (Views: 3.9ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:49:39 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.3ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:49:41 -0400
+Processing by MoodsController#get_moods as JSON
+Started GET "/songs/get_all_songs.json?id=2" for ::1 at 2017-03-14 21:49:41 -0400
+  [1m[36mMood Load (3.1ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 3.1ms)
+
+
+Processing by SongsController#get_all_songs as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (5.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."mood_id" = $1[0m  [["mood_id", 2]]
+Completed 200 OK in 8ms (Views: 1.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/songs/get_song.json?artist=x&track=x" for ::1 at 2017-03-14 21:49:55 -0400
+Processing by SongsController#get_song as JSON
+  Parameters: {"artist"=>"x", "track"=>"x"}
+Completed 200 OK in 310ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:51:18 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.5ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:51:20 -0400
+Started GET "/songs/get_all_songs.json?id=2" for ::1 at 2017-03-14 21:51:20 -0400
+Processing by SongsController#get_all_songs as JSON
+Processing by MoodsController#get_moods as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mMood Load (1.0ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 1.0ms)
+
+
+  [1m[36mSong Load (1.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."mood_id" = $1[0m  [["mood_id", 2]]
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:52:06 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.3ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:52:07 -0400
+Started GET "/songs/get_all_songs.json?id=2" for ::1 at 2017-03-14 21:52:07 -0400
+Processing by MoodsController#get_moods as JSON
+Processing by SongsController#get_all_songs as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mMood Load (9.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 13ms (Views: 2.5ms | ActiveRecord: 9.7ms)
+
+
+  [1m[36mSong Load (19.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."mood_id" = $1[0m  [["mood_id", 2]]
+Completed 200 OK in 22ms (Views: 1.3ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/songs/get_song.json?artist=x&track=x" for ::1 at 2017-03-14 21:52:13 -0400
+Processing by SongsController#get_song as JSON
+  Parameters: {"artist"=>"x", "track"=>"x"}
+Completed 200 OK in 308ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (12.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (7971.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "mood_player_development"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (7626.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "mood_player_development"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (3040.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "mood_player_development"[0m
+  [1m[35m (230.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "mood_player_test"[0m
+  [1m[35m (727.5ms)[0m  [1m[35mCREATE DATABASE "mood_player_development" ENCODING = 'unicode'[0m
+  [1m[35m (1112.4ms)[0m  [1m[35mCREATE DATABASE "mood_player_test" ENCODING = 'unicode'[0m
+  [1m[35m (50.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7601936840913371460);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMoods (20170312164423)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCREATE TABLE "moods" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170312164423"]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSongs (20170312164503)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE TABLE "songs" ("id" serial primary key, "uri" character varying, "mood_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE  INDEX  "index_songs_on_mood_id" ON "songs"  ("mood_id")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170312164503"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-15 01:56:26 UTC], ["updated_at", 2017-03-15 01:56:26 UTC]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7601936840913371460)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "moods" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Happy"], ["created_at", 2017-03-15 01:56:26 UTC], ["updated_at", 2017-03-15 01:56:26 UTC]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "moods" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sad"], ["created_at", 2017-03-15 01:56:26 UTC], ["updated_at", 2017-03-15 01:56:26 UTC]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "moods" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Angry"], ["created_at", 2017-03-15 01:56:26 UTC], ["updated_at", 2017-03-15 01:56:26 UTC]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "moods" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Goofy"], ["created_at", 2017-03-15 01:56:26 UTC], ["updated_at", 2017-03-15 01:56:26 UTC]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "moods" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Chilled Out"], ["created_at", 2017-03-15 01:56:26 UTC], ["updated_at", 2017-03-15 01:56:26 UTC]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:58:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 47ms (Views: 4.3ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:58:06 -0400
+Started GET "/songs/get_all_songs.json?id=1" for ::1 at 2017-03-14 21:58:06 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (1.1ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 1.1ms)
+
+
+Processing by SongsController#get_all_songs as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."mood_id" = $1[0m  [["mood_id", 1]]
+Completed 200 OK in 22ms (Views: 0.8ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:58:09 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.5ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-14 21:58:23 -0400
+Started GET "/songs/get_all_songs.json?id=4" for ::1 at 2017-03-14 21:58:23 -0400
+Processing by SongsController#get_all_songs as JSON
+  Parameters: {"id"=>"4"}
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.9ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mSong Load (14.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."mood_id" = $1[0m  [["mood_id", 4]]
+Completed 200 OK in 17ms (Views: 1.8ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/songs/get_song.json?artist=x&track=x" for ::1 at 2017-03-14 21:58:49 -0400
+Processing by SongsController#get_song as JSON
+  Parameters: {"artist"=>"x", "track"=>"x"}
+Completed 200 OK in 516ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/moods/save_mood.json?id=4&uri=spotify:track:6fwdbPMwP1zVStm8FybmkO" for ::1 at 2017-03-14 21:59:14 -0400
+Processing by MoodsController#save_mood as JSON
+  Parameters: {"id"=>"4", "uri"=>"spotify:track:6fwdbPMwP1zVStm8FybmkO"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Load (0.4ms)[0m  [1m[34mSELECT  "moods".* FROM "moods" WHERE "moods"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "songs" ("uri", "mood_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["uri", "spotify:track:6fwdbPMwP1zVStm8FybmkO"], ["mood_id", 4], ["created_at", 2017-03-15 01:59:14 UTC], ["updated_at", 2017-03-15 01:59:14 UTC]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+No template found for MoodsController#save_mood, rendering head :no_content
+Completed 204 No Content in 163ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-15 09:22:29 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-15 09:22:42 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (3.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 9ms (Views: 4.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-15 09:22:51 -0400
+Started GET "/songs/get_all_songs.json?id=1" for ::1 at 2017-03-15 09:22:51 -0400
+Processing by MoodsController#get_moods as JSON
+Processing by SongsController#get_all_songs as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (7.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 17ms (Views: 9.1ms | ActiveRecord: 7.4ms)
+
+
+  [1m[36mSong Load (12.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."mood_id" = $1[0m  [["mood_id", 1]]
+Completed 200 OK in 20ms (Views: 4.5ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/songs/get_song.json?artist=x&track=x" for ::1 at 2017-03-15 09:23:01 -0400
+Processing by SongsController#get_song as JSON
+  Parameters: {"artist"=>"x", "track"=>"x"}
+Completed 200 OK in 779ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/moods/save_mood.json?id=1&uri=spotify:track:6fwdbPMwP1zVStm8FybmkO" for ::1 at 2017-03-15 09:23:09 -0400
+Processing by MoodsController#save_mood as JSON
+  Parameters: {"id"=>"1", "uri"=>"spotify:track:6fwdbPMwP1zVStm8FybmkO"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Load (0.5ms)[0m  [1m[34mSELECT  "moods".* FROM "moods" WHERE "moods"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "songs" ("uri", "mood_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["uri", "spotify:track:6fwdbPMwP1zVStm8FybmkO"], ["mood_id", 1], ["created_at", 2017-03-15 13:23:09 UTC], ["updated_at", 2017-03-15 13:23:09 UTC]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+No template found for MoodsController#save_mood, rendering head :no_content
+Completed 204 No Content in 108ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-15 09:23:48 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (1.8ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-15 09:23:49 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-15 09:23:52 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (3.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-15 10:52:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (0.3ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 25ms (Views: 5.8ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/moods/get_moods.json" for ::1 at 2017-03-15 10:52:25 -0400
+Started GET "/songs/get_all_songs.json?id=1" for ::1 at 2017-03-15 10:52:25 -0400
+Processing by MoodsController#get_moods as JSON
+  [1m[36mMood Load (2.1ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 2.1ms)
+
+
+Processing by SongsController#get_all_songs as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."mood_id" = $1[0m  [["mood_id", 1]]
+Completed 200 OK in 17ms (Views: 4.4ms | ActiveRecord: 0.7ms)
+
+

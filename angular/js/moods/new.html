@@ -1,0 +1,11 @@
+<section>
+  <form ng-submit="MoodsNewVM.submit()">
+    <input type="text" ng-model="MoodsNewVM.artist"/>
+    <input type="text" ng-model="MoodsNewVM.track"/>
+    <button type="submit">Click here to submit</button>
+  </form>
+</section>
+<aside>
+<iframe ng-show="MoodsNewVM.response" ng-src="{{MoodsNewVM.getiframe(MoodsNewVM.response.uri)}}" width="250" height="80" frameborder="0" allowtransparency="true" view="coverart"></iframe>
+<button ng-show="MoodsNewVM.response" ng-click="MoodsNewVM.save(MoodsNewVM.response.uri)">Click here to save</button>
+</aside>
